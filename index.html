@@ -1,53 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper Scissors Game</title>
-    <script type="text/javascript" src="/script.js" defer></script>
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <section>
-      <div>
-        <h1 id="rounds">Round</h1>
-      </div>
-    </section>
-    <!--3 divs/ 1 for your choices/ 1 for showing the results of the previous rounds/ 1 for computer choices-->
-    <section id="bottom">
-      <div>
-        <h3 id="wins" class="stats">Wins</h3>
-      <div class="bottomBox imageContainers" id="playerImage">
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etch a Sketch Project</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" type="text/javascript" defer></script>
+</head>
+<body>
+  <h1>Etch a Sketch</h1>
+  <section>
+    <div id="functionality">
+        <div id="colorButton">
+          <input id="color" type="color"/>
+        </div>
+        <button id="partyMode">Party Mode</button>
+        <button id="eraser">Eraser</button>
+        <button id="eraseEverything">Erase</button>
+        <div>
+          <input type="range" min="16" max="64" value="16" class="slider" />
+          <label for="slider" id="sliderValue"></label>
+        </div>
     </div>
-    <div>
-      <h3 id="ties" class="stats">Ties</h3>
-      <div class="bottomBox" id="middleBox">
-        <div class="midInfo">
-          <h1 id="currentGame"></h1>
-        </div>
-        <div class="midInfo">
-          <h3 id="previousRound" class="hide"></h3>
-          <p id="previousGame" class="hide"></p>
-        </div>
-        <div class="midInfo">
-          <h3 id="previousRoundTwo" class="hide"></h3>
-          <p id="previousGameTwo" class="hide"></p>
-        </div>
-        <div class="midInfo">
-          <h3 id="theComputer" class="hide">The Computer</h3>
-          <p id="quips"></p>
-        </div>
-      </div>
-    </div>
-    <div>
-      <h3 id="losses" class="stats">Losses</h3>
-      <div class="bottomBox imageContainers" id="computerImage"></div>
-    </div>
-    </section>
-  </body>
+    <div id="wrapper"></div>
+  </section>
+</body>
 </html>
