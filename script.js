@@ -62,6 +62,7 @@ function removeElementsByClass(className) {
 
 //Color input
 const colorInput = document.querySelector("#color");
+colorInput.addEventListener("click", () => activateGrid(colorInput.value));
 colorInput.addEventListener("input", () => activateGrid(colorInput.value));
 
 //Starting Page
